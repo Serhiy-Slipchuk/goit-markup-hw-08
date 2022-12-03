@@ -1,0 +1,28 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $darkBackgroundColor;
+
+&__field {
+    display: flex;
+    justify-content: space-between;
+}
+
+&__contacts {
+    margin-top: 20px;
+}
+
+&__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $liteTextColor;
+}
+}
+
+.footer__column:nth-child(2),
+.footer__column:nth-child(3) {
+    padding-top: 12px;
+}

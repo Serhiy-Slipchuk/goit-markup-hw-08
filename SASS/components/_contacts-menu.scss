@@ -1,0 +1,16 @@
+.contacts-menu__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contacts-menu__link {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $transparentTextColor;
+    transition: color $mainDuration $mainTimingFunction;
+
+&:hover,
+&:focus {
+    color: $liteTextColor
+}
+}

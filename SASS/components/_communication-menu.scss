@@ -1,0 +1,29 @@
+.communication-menu {
+    display: flex;
+    align-items: center;
+}
+
+.communication-menu__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.communication-menu__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+    transition: color $mainDuration $mainTimingFunction;
+
+&:hover, &:focus {
+    color: $accentColor;
+}
+}
+
+.communication-menu__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
