@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 519px;
+
+    @media screen and (min-width: 1200px){
+    width: 519px; 
+    }
 }
 }

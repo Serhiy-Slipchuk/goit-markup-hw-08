@@ -6,12 +6,18 @@
     letter-spacing: 0.03em;
     color: $accentColor;
 
-
 &__part {
     color: $logoColor;
 }
 
 &__part--light {
     color: $liteTextColor;
+}
+
+&--footer {
+    @media screen and (max-width: 1200px) {
+        display: block;
+        text-align: center;
+    }    
 }
 }

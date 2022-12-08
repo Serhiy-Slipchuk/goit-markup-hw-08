@@ -1,9 +1,19 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
 &--work {
-    padding-top: 24px;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        padding-top: 24px;
+    }
 }
 
 &--team {
@@ -12,13 +22,18 @@
 }
 
 .section__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: $secondaryTextColor;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 .section__list {
@@ -30,6 +45,13 @@
 &--portfolio {
     margin-top: 50px;
 }
+
+&--clients {
+    @media screen and (max-width: 279px) {
+        display: block;
+        
+    }
+}
 }
 
 .section__item {
@@ -37,12 +59,29 @@
     margin-left: 30px;
     margin-top: 30px;
     background-color: $primaryBackgroundColor;
+    // outline: 2px solid blueviolet;
 
 &--team, &--features {
-    max-width: 270px;
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
 }
 
 &--clients {
-    max-width: 170px;
+   width: calc((100% - 60px) / 2);
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 }

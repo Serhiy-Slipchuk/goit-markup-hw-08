@@ -1,6 +1,10 @@
 .communication-menu {
-    display: flex;
-    align-items: center;
+    display: none;
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .communication-menu__item:not(:first-child) {
