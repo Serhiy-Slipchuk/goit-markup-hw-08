@@ -71,10 +71,16 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__part {
   color: #000000;
@@ -307,7 +313,12 @@ body {
 }
 
 .contacts-menu__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-menu__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts-menu__link {

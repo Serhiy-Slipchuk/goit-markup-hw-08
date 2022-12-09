@@ -10,7 +10,11 @@
 }
 
 .contacts-menu__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .contacts-menu__link {
