@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .form-mail__input {
@@ -22,11 +26,16 @@
     border-radius: 4px;
     transition: color $mainDuration $mainTimingFunction, border-color $mainDuration $mainTimingFunction;
 
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
     @media screen and (max-width: 1200px) {
         margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1200px) {
+        width: 358px;
         margin-right: 12px;
     }
 
