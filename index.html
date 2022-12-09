@@ -143,7 +143,21 @@
           <ul class="section__list list">
             <li class="section__item">
               <div class="gallery-card">
-                <img src="./images/image01.jpg" alt="Проект1" width="370" />
+                <picture>
+                  <source 
+                    srcset="./images/work/img1_lg1x.webp 1x, ./images/work/img1_lg2x.webp 2x, ./images/work/img1_lg3x.webp 3x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/work/img1_lg1x.jpg 1x, ./images/work/img1_lg2x.jpg 2x, ./images/work/img1_lg3x.jpg 3x"
+                    type="image/jpg"
+                  />
+                  <img
+                   src="./images/work/img1_lg1x.jpg"
+                   alt="Проект1"
+                   width="370"
+                   loading="lazy" />
+                </picture>
                 <div class="gallery-card__overlay">
                   <h3 class="gallery-card__title">Десктопні додатки</h3>
                 </div>
@@ -151,7 +165,21 @@
             </li>
             <li class="section__item">
               <div class="gallery-card">
-                <img src="./images/image02.jpg" alt="Проект2" width="370" />
+                <picture>
+                  <source 
+                    srcset="./images/work/img2_lg1x.webp 1x, ./images/work/img2_lg2x.webp 2x, ./images/work/img2_lg3x.webp 3x"
+                    type="image/webp"
+                  />
+                  <source 
+                    srcset="./images/work/img2_lg1x.jpg 1x, ./images/work/img2_lg2x.jpg 2x, ./images/work/img2_lg3x.jpg 3x"
+                    type="image/jpg"
+                  />
+                  <img
+                  src="./images/work/img2_lg1x.jpg" 
+                  alt="Проект2"
+                  width="370"
+                  loading="lazy" />
+                </picture>
                 <div class="gallery-card__overlay">
                   <h3 class="gallery-card__title">Мобільні додатки</h3>
                 </div>
@@ -159,7 +187,21 @@
             </li>
             <li class="section__item">
               <div class="gallery-card">
-                <img src="./images/image03.jpg" alt="Проект3" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/work/img3_lg1x.webp 1x, ./images/work/img3_lg2x.webp 2x, ./images/work/img3_lg3x.webp 3x"
+                    type="image/webp" 
+                  />
+                  <source
+                    srcset="./images/work/img3_lg1x.jpg 1x, ./images/work/img3_lg2x.jpg 2x, ./images/work/img3_lg3x.jpg 3x"
+                    type="image/jpg" 
+                  />
+                  <img 
+                  src="./images/work/img3_lg1x.jpg" 
+                  alt="Проект3" 
+                  width="370"
+                  loading="lazy" />
+                </picture>
                 <div class="gallery-card__overlay">
                   <h3 class="gallery-card__title">Дизайнерські рішення</h3>
                 </div>
@@ -176,12 +218,32 @@
           <ul class="section__list list">
             <li class="section__item section__item--team">
               <div class="person-card">
-                <img
-                src="./images/team/img1_sm1x.jpg"
-                alt="Фото Ігор Дем'яненко"
-                width="450"
-                loading="lazy"
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img1_lg1x.webp 1x, ./images/team/img1_lg2x.webp 2x, ./images/team/img1_lg3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img1_lg1x.jpg 1x, ./images/team/img1_lg2x.jpg 2x, ./images/team/img1_lg3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img1_md1x.webp 1x, ./images/team/img1_md2x.webp 2x, ./images/team/img1_md3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img1_md1x.jpg 1x, ./images/team/img1_md2x.jpg 2x, ./images/team/img1_md3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img1_sm1x.webp 1x, ./images/team/img1_sm2x.webp 2x, ./images/team/img1_sm3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img1_sm1x.jpg 1x, ./images/team/img1_sm2x.jpg 2x, ./images/team/img1_sm3x.jpg 3x"
+                    type="image/jpeg" />
+                  <img
+                  src="./images/team/img1_sm1x.jpg"
+                  alt="Фото Ігор Дем'яненко"
+                  width="450"
+                  loading="lazy"
                 />
+                </picture>
                 <h3 class="person-card__title">Ігор Дем'яненко</h3>
                 <p class="person-card__text" lang="en">Product Designer</p>
                 <ul class="socials list">
@@ -218,12 +280,32 @@
             </li>
             <li class="section__item section__item--team">
               <div class="person-card">
-                <img
-                src="./images/team/img2_sm1x.jpg"
-                alt="Фото Ольга Рєпіна"
-                width="450"
-                loading="lazy"
-                />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img2_lg1x.webp 1x, ./images/team/img2_lg2x.webp 2x, ./images/team/img2_lg3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img2_lg1x.jpg 1x, ./images/team/img2_lg2x.jpg 2x, ./images/team/img2_lg3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img2_md1x.webp 1x, ./images/team/img2_md2x.webp 2x, ./images/team/img2_md3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img2_md1x.jpg 1x, ./images/team/img2_md2x.jpg 2x, ./images/team/img2_md3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img2_sm1x.webp 1x, ./images/team/img2_sm2x.webp 2x, ./images/team/img2_sm3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img2_sm1x.jpg 1x, ./images/team/img2_sm2x.jpg 2x, ./images/team/img2_sm3x.jpg 3x"
+                    type="image/jpeg" />
+                  <img
+                  src="./images/team/img2_sm1x.jpg"
+                  alt="Фото Ольга Рєпіна"
+                  width="450"
+                  loading="lazy"
+                  />
+                </picture>
                 <h3 class="person-card__title">Ольга Рєпіна</h3>
                 <p class="person-card__text" lang="en">Frontend Developer</p>
                 <ul class="socials list">
@@ -260,12 +342,32 @@
             </li>
             <li class="section__item section__item--team">
               <div class="person-card">
-                <img
-                src="./images/team/img3_sm1x.jpg"
-                alt="Фото Микола Тарасов"
-                width="450"
-                loading="lazy"
-                />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img3_lg1x.webp 1x, ./images/team/img3_lg2x.webp 2x, ./images/team/img3_lg3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img3_lg1x.jpg 1x, ./images/team/img3_lg2x.jpg 2x, ./images/team/img3_lg3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img3_md1x.webp 1x, ./images/team/img3_md2x.webp 2x, ./images/team/img3_md3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img3_md1x.jpg 1x, ./images/team/img3_md2x.jpg 2x, ./images/team/img3_md3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img3_sm1x.webp 1x, ./images/team/img3_sm2x.webp 2x, ./images/team/img3_sm3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img3_sm1x.jpg 1x, ./images/team/img3_sm2x.jpg 2x, ./images/team/img3_sm3x.jpg 3x"
+                    type="image/jpeg" />
+                  <img
+                  src="./images/team/img3_sm1x.jpg"
+                  alt="Фото Микола Тарасов"
+                  width="450"
+                  loading="lazy"
+                  />
+                </picture>
                 <h3 class="person-card__title">Микола Тарасов</h3>
                 <p class="person-card__text" lang="en">Marketing</p>
                 <ul class="socials list">
@@ -302,12 +404,32 @@
             </li>
             <li class="section__item section__item--team">
               <div class="person-card">
-                <img
-                src="./images/team/img4_sm1x.jpg"
-                alt="Фото Михайло Єрмаков"
-                width="450"
-                loading="lazy"
-                />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img4_lg1x.webp 1x, ./images/team/img4_lg2x.webp 2x, ./images/team/img4_lg3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/team/img4_lg1x.jpg 1x, ./images/team/img4_lg2x.jpg 2x, ./images/team/img4_lg3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img4_md1x.webp 1x, ./images/team/img4_md2x.webp 2x, ./images/team/img4_md3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(min-width: 768px)"
+                    srcset="./images/team/img4_md1x.jpg 1x, ./images/team/img4_md2x.jpg 2x, ./images/team/img4_md3x.jpg 3x"
+                    type="image/jpeg" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img4_sm1x.webp 1x, ./images/team/img4_sm2x.webp 2x, ./images/team/img4_sm3x.webp 3x"
+                    type="image/webp" />
+                  <source media="(max-width: 767px)"
+                    srcset="./images/team/img4_sm1x.jpg 1x, ./images/team/img4_sm2x.jpg 2x, ./images/team/img4_sm3x.jpg 3x"
+                    type="image/jpeg" />
+                  <img
+                  src="./images/team/img4_sm1x.jpg"
+                  alt="Фото Михайло Єрмаков"
+                  width="450"
+                  loading="lazy"
+                  />
+                </picture>
                 <h3 class="person-card__title">Михайло Єрмаков</h3>
                 <p class="person-card__text" lang="en">UI Designer</p>
                 <ul class="socials list">
