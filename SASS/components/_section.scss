@@ -39,11 +39,21 @@
 .section__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     margin-left: -30px;
     margin-top: -30px;
+    // outline: 2px solid orangered;
 
 &--portfolio {
-    margin-top: 50px;
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
 }
 
 &--clients {
@@ -55,19 +65,21 @@
 }
 
 .section__item {
-    max-width: 370px;
+    max-width: 450px;
     margin-left: 30px;
     margin-top: 30px;
     background-color: $primaryBackgroundColor;
     // outline: 2px solid blueviolet;
 
-&--team, &--features {
-    max-width: 450px;
-
     @media screen and (min-width: 768px) {
         max-width: 354px;
     }
 
+    @media screen and (min-width: 1200px) {
+        max-width: 370px;
+    }
+
+&--team, &--features {
     @media screen and (min-width: 1200px) {
         max-width: 270px;
     }
