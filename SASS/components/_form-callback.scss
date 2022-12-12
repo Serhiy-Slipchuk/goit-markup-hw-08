@@ -11,7 +11,7 @@
 
 .form-callback__input {
     height: 40px;
-    width: 448px;
+    width: 100%;
     padding-left: 42px;
     font-size: 16px;
     border: 1px solid;
@@ -19,6 +19,15 @@
     border-radius: 4px;
     outline: transparent;
     transition: border-color $mainDuration $mainTimingFunction;
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        
+    }
 
 &:focus {
     border-color: $accentColor;
@@ -28,7 +37,7 @@
 
 .form-callback__textarea {
     height: 120px;
-    width: 448px;
+    width: 100%;
     font-size: 16px;
     border: 1px solid;
     border-color: rgba(33, 33, 33, 0.2);
@@ -36,6 +45,15 @@
     outline: transparent;
     transition: border-color $mainDuration $mainTimingFunction;
     resize: none;
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+    
+    }
 
 &:focus {
     border-color: $accentColor;
@@ -113,7 +131,27 @@
     letter-spacing: 0.03em;
 }
 
+.form-callback__checkbox-description {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $primaryTextColor;
+    
+     @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
 .form-callback__link {
     margin-left: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     color: $accentColor;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
