@@ -1438,12 +1438,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -10px;
 }
 
 .mobile-menu__socials-item {
   position: relative;
-}
-.mobile-menu__socials-item:not(:first-child) {
+  margin-top: 20px;
   padding-left: 10px;
 }
 .mobile-menu__socials-item:not(:last-child) {
