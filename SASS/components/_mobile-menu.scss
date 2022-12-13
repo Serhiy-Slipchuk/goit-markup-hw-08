@@ -9,7 +9,7 @@
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: space-between;
     background-color: $primaryBackgroundColor;
     // z-index: 9;
     overflow-y: scroll;
@@ -59,9 +59,9 @@
     }
 }
 
-.mobile-menu__pages-list {
-    margin-bottom: 302px;
-}
+// .mobile-menu__pages-list {
+//     margin-bottom: 302px;
+// }
 
 .mobile-menu__pages-item:not(:last-child),
 .mobile-menu__contacts-item:not(:last-child){
