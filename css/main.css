@@ -1342,6 +1342,7 @@ body {
           flex-direction: column;
   background-color: #FFFFFF;
   z-index: 9;
+  overflow-y: scroll;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
