@@ -1341,7 +1341,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #FFFFFF;
-  z-index: 9;
   overflow-y: scroll;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
