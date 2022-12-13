@@ -1340,10 +1340,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow-y: scroll;
   background-color: #FFFFFF;
   z-index: 9;
   -webkit-transform: translateX(100%);
@@ -1399,6 +1395,10 @@ body {
   right: 15px;
 }
 
+.mobile-menu__pages-list {
+  margin-bottom: 302px;
+}
+
 .mobile-menu__pages-item:not(:last-child),
 .mobile-menu__contacts-item:not(:last-child) {
   margin-bottom: 32px;
@@ -1439,8 +1439,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .mobile-menu__socials-item {

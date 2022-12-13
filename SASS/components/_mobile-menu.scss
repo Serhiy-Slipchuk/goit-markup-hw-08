@@ -9,8 +9,7 @@
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow-y: scroll;
+    // justify-content: space-between;
     background-color: $primaryBackgroundColor;
     z-index: 9;
     
@@ -59,6 +58,10 @@
     }
 }
 
+.mobile-menu__pages-list {
+    margin-bottom: 302px;
+}
+
 .mobile-menu__pages-item:not(:last-child),
 .mobile-menu__contacts-item:not(:last-child){
     margin-bottom: 32px;
@@ -99,7 +102,7 @@
 
 .mobile-menu__socials-list {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 }
 
 .mobile-menu__socials-item {
