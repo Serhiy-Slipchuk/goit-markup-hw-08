@@ -75,8 +75,12 @@
     color: $liteTextColor;
 
     animation-name: animationTitle;
-    animation-duration: 1500ms;
+    animation-duration: 1000ms;
     animation-fill-mode: both;
+
+    @media screen and (min-width: 1200px) {
+        animation-name: animationTitleDesktop;
+    }
   
     @media screen and (min-width: 1200px) {
         max-width: 696px;

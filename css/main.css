@@ -129,12 +129,18 @@ body {
 .button--hero {
   -webkit-animation-name: animationHeroBtn;
           animation-name: animationHeroBtn;
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+@media screen and (min-width: 1200px) {
+  .button--hero {
+    -webkit-animation-name: animationHeroBtnDesktop;
+            animation-name: animationHeroBtnDesktop;
+  }
 }
 .button--footer {
   display: block;
@@ -1072,10 +1078,16 @@ body {
   color: #FFFFFF;
   -webkit-animation-name: animationTitle;
           animation-name: animationTitle;
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+@media screen and (min-width: 1200px) {
+  .section-hero__title {
+    -webkit-animation-name: animationTitleDesktop;
+            animation-name: animationTitleDesktop;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-hero__title {
@@ -1508,8 +1520,8 @@ body {
   0% {
     opacity: 0;
     scale: 0;
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-118px);
+            transform: translateY(-118px);
   }
   100% {
     opacity: 1;
@@ -1523,6 +1535,48 @@ body {
   0% {
     opacity: 0;
     scale: 0;
+    -webkit-transform: translateY(-118px);
+            transform: translateY(-118px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes animationHeroBtn {
+  0% {
+    opacity: 0;
+    scale: 0;
+    -webkit-transform: translateY(118px);
+            transform: translateY(118px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes animationHeroBtn {
+  0% {
+    opacity: 0;
+    scale: 0;
+    -webkit-transform: translateY(118px);
+            transform: translateY(118px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes animationTitleDesktop {
+  0% {
+    opacity: 0;
+    scale: 0;
     -webkit-transform: translateY(-200px);
             transform: translateY(-200px);
   }
@@ -1533,7 +1587,21 @@ body {
             transform: translateY(0);
   }
 }
-@-webkit-keyframes animationHeroBtn {
+@keyframes animationTitleDesktop {
+  0% {
+    opacity: 0;
+    scale: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes animationHeroBtnDesktop {
   0% {
     opacity: 0;
     scale: 0;
@@ -1547,7 +1615,7 @@ body {
             transform: translateY(0);
   }
 }
-@keyframes animationHeroBtn {
+@keyframes animationHeroBtnDesktop {
   0% {
     opacity: 0;
     scale: 0;

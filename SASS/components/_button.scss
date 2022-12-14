@@ -20,9 +20,14 @@
 
 &--hero {
     animation-name: animationHeroBtn;
-    animation-duration: 1500ms;
-    animation-delay: 1500ms;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
     animation-fill-mode: both;
+
+    @media screen and (min-width: 1200px) {
+        animation-name: animationHeroBtnDesktop;
+        
+    }
 
 }
 
