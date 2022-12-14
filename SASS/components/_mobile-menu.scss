@@ -1,5 +1,3 @@
-.mobile-menu {}
-
 .mobile-menu__container {
     position: fixed;
     top: 0;
@@ -9,9 +7,8 @@
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     background-color: $primaryBackgroundColor;
-    // z-index: 9;
+    z-index: 3;
     overflow-y: scroll;
     
     transform: translateX(100%);
@@ -83,6 +80,10 @@
     &:focus {
         color: $accentColor;
     }
+
+&--current {
+    color: $accentColor;
+}
 }
 
 .mobile-menu__contacts-tel {

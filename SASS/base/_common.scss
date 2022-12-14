@@ -3,7 +3,11 @@ body {
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+    }
 }
 
 .link {
@@ -19,22 +23,17 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    // outline: 2px solid green;
-
+    
     @media screen and (min-width: 480px) {
         width: 480px;
-        // outline: 2px solid blue;
     }
 
     @media screen and (min-width: 768px) {
         width: 768px;
-        // outline: 2px solid orange;
     }
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
-        // outline: 2px solid red;
     }
-
 }
 

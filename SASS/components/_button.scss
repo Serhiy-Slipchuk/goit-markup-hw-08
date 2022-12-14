@@ -18,6 +18,14 @@
     color: $liteTextColor;
     cursor: pointer;
 
+&--hero {
+    animation-name: animationHeroBtn;
+    animation-duration: 1500ms;
+    animation-delay: 1500ms;
+    animation-fill-mode: both;
+
+}
+
 &--footer {
     display: block;
     width: 200px;
