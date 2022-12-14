@@ -42,6 +42,9 @@ body {
     padding-top: 60px;
   }
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .link {
   text-decoration: none;
